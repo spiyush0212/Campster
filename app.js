@@ -26,7 +26,7 @@ const indexRoutes = require('./routes/index'),
 // ===================
 
 
-const databaseurl = 'mongodb+srv://piyush:piyush@cluster0.ovzas.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const databaseurl = process.env.DATABASEURL || 'mongodb://0.0.0.0/yelpcampdb';
 mongoose.connect(databaseurl, () =>
     console.log('Server connected to database')
 );
