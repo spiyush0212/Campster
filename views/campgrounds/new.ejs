@@ -1,0 +1,25 @@
+<%- include('../partials/header'); -%>
+
+<div class="my-3">
+
+    <h1 class="text-center">Add a new Campground</h1>
+
+    <form action="/campgrounds" method="POST">
+        <div style="width: 30%; margin: 0px auto;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Campground Name</label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="name">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Campground Image URL</label>
+                <input type="text" class="form-control" id="image" name="image">
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Campground Description</label>
+                <input type="text" class="form-control" id="desc" name="desc">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+    </form>
+</div>
+<%- include('../partials/footer'); -%>

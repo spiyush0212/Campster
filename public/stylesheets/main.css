@@ -1,0 +1,8 @@
+body {
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.deleteButton {
+  display: inline;
+}
