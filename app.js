@@ -26,7 +26,7 @@ const indexRoutes = require('./routes/index'),
 // ===================
 
 
-const databaseurl = process.env.DATABASEURL || 'mongodb://0.0.0.0/yelp_camp';
+const databaseurl = process.env.DATABASEURL;
 mongoose.connect(databaseurl, () =>
     console.log('Server connected to database')
 );
